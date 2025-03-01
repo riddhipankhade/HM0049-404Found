@@ -1,0 +1,26 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.hero-section {
+    margin-top: 100px;
+    padding: 3rem;
+}
+
+.badge {
+    font-size: 0.9rem;
+}
