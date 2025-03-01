@@ -3,6 +3,13 @@
 {% block content %}
 <div class="hero-section text-center py-5 bg-white rounded-3 shadow">
     <h1 class="display-4 mb-4">Student Marketplace</h1>
+    <div class="mb-4">
+        {% if current_user.is_authenticated %}
+            <a href="/post_product" class="btn btn-success btn-lg">Sell Your Product</a>
+        {% else %}
+            <a href="/register" class="btn btn-success btn-lg">Register to Sell</a>
+        {% endif %}
+    </div>    
     <form action="/search" class="w-75 mx-auto">
         <div class="input-group">
             <input type="text" name="query" class="form-control" placeholder="Search textbooks, stationery...">
