@@ -10,9 +10,6 @@ EduMarket is a web application designed for students to buy and sell educational
 2. [Usage](#usage)
 3. [Frameworks Used](#frameworks-used)
 4. [Contributors](#contributors)
-5. [License](#license)
-6. [Acknowledgments](#acknowledgments)
-7. [Contact](#contact)
 
 ---
 
@@ -35,3 +32,16 @@ Follow these steps to host EduMarket locally on your machine:
 - Change to the project directory using the `cd` command:
   ```bash
   cd student_marketplace
+  
+### Step 6: Install Necessary Modules
+- Install the required Python modules (e.g., Flask, SQLAlchemy) using pip:
+  ```bash
+  pip install flask sqlalchemy
+
+### Step 7: Run the Application
+- Run the application using the following command:
+ ```bash
+python app.py
+
+
+
