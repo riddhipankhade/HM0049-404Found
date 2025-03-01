@@ -76,10 +76,7 @@ def dashboard():
 @app.route('/post_product', methods=['GET', 'POST'])
 @login_required
 def post_product():
-    if current_user.user_type != 'seller':
-        flash('Only sellers can post products!', 'warning')
-        return redirect(url_for('dashboard'))
-
+    # Removed user_type check
     if request.method == 'POST':
         try:
             product = Product(
