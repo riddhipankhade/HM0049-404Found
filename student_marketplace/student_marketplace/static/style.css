@@ -1,11 +1,12 @@
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+.product-image {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
 }
 
-.container {
-    flex: 1;
+.hero-section {
+    margin-top: 100px;
+    padding: 2rem;
 }
 
 .card {
@@ -14,13 +15,4 @@ body {
 
 .card:hover {
     transform: translateY(-5px);
-}
-
-.hero-section {
-    margin-top: 100px;
-    padding: 3rem;
-}
-
-.badge {
-    font-size: 0.9rem;
 }
