@@ -18,7 +18,6 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(50), unique=True, nullable=False)
     email = db.Column(db.String(100), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
-    user_type = db.Column(db.String(10), nullable=False)
 
 class Product(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -57,8 +56,7 @@ def register():
             user = User(
                 username=request.form['username'],
                 email=request.form['email'],
-                password=request.form['password'],
-                user_type=request.form['user_type']
+                password=request.form['password']
             )
             db.session.add(user)
             db.session.commit()
