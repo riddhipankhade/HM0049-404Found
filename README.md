@@ -41,7 +41,7 @@ Follow these steps to host EduMarket locally on your machine:
 ### Step 7: Run the Application
 - Run the application using the following command:
  ```bash
-python app.py
+  python app.py
 ```
 - Once server starts, you will see a local hosting link(e.g., http://127.0.0.1:5000).
 
