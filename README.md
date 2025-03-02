@@ -31,7 +31,7 @@ Follow these steps to host EduMarket locally on your machine:
 ### Step 5: Navigate to the Project Directory
 - Change to the project directory using the `cd` command:
   ```bash
-  cd student_marketplace
+  cd C:\Users\ADMIN\Downloads\HM0049-404Found-main\HM0049-404Found-main
   
 ### Step 6: Install Necessary Modules
 - Install the required Python modules (e.g., Flask, SQLAlchemy) using pip:
