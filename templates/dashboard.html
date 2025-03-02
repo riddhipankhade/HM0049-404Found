@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3">Available Products</h1>
+        <a href="/post_product" class="btn btn-success">
+            <i class="bi bi-plus-lg"></i> Sell Product
+        </a>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for product in products %}
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='uploads/' + product.image) }}" 
+                     class="card-img-top product-image" 
+                     alt="{{ product.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <div class="mb-2">
+                        <span class="badge bg-primary">{{ product.category }}</span>
+                    </div>
+                    <p class="card-text">
+                        <span class="h4">₹{{ product.price }}</span>
+                    </p>
+                    <small class="text-muted">
+                        Seller: {{ product.seller.username }}
+                    </small>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12">
+            <div class="alert alert-info">
+                No products available yet. Be the first to sell something!
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

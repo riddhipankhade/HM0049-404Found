@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h3 class="mb-4">Search Results for "{{ query }}"</h3>
+    
+    {% if products %}
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for product in products %}
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src="{{ url_for('static', filename='uploads/' + product.image) }}" 
+                     class="card-img-top product-image" 
+                     alt="{{ product.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <div class="mb-2">
+                        <span class="badge bg-primary">{{ product.category }}</span>
+                    </div>
+                    <p class="card-text">
+                        <span class="h4">₹{{ product.price }}</span>
+                    </p>
+                    <small class="text-muted">
+                        Seller: {{ product.seller.username }}
+                    </small>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="alert alert-warning">
+        No products found matching your criteria.
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
