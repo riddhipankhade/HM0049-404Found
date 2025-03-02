@@ -54,25 +54,28 @@ EduMarket is designed to be simple and intuitive for students to buy and sell ed
 
 ### 1. Home Page
 - The home page looks like this:
-  ![Home Page]({image})
+![Screenshot 2025-03-02 101453](https://github.com/user-attachments/assets/526b5fb3-1442-40f9-813a-498fdc672436)
+
 - From here, you can browse available products in diffrent categories or navigate to the login/signup page.
 
 ### 2. Log In or Sign Up
 - If you already have an account, click **Log In** on the navigation bar. If you're new, click **Sign Up** to create an account.
-  ![Log In or Sign Up]({image pointing at the log in or register on the nav bar})
+![Screenshot 2025-03-02 103639](https://github.com/user-attachments/assets/a4ec9628-016d-4517-871e-151582976818)
+![Screenshot 2025-03-02 103707](https://github.com/user-attachments/assets/793362ab-ae9e-47d9-b4b5-1f1fe4fe30a7)
 
 ### 3. Buy Products
 - After logging in, you can browse products on the home page or use the search bar to find specific items.
 - To buy a product, contact the owner using the provided contact details on the product page.
+![Screenshot 2025-03-02 103715](https://github.com/user-attachments/assets/4f59c777-cd9d-448f-8f26-7163e36ac086)
 
 ### 4. Sell Products
 - To sell a product, click the **Post Product** button on the navigation bar.
-  ![Post Product Button]({ss of the button and the post product page})
+![Screenshot 2025-03-02 103755](https://github.com/user-attachments/assets/effe21a5-6359-4ae4-ae35-ca3354d720c5)
+
 - Fill out the form with details about the product (e.g., name, description, price, category) and submit it.
 
 ### 5. Product Listing Page
-- Once you post a product, it will appear on the home page like this:
-  ![Product Listing Page]({home page with the products you added})
+- Once you post a product, it will appear on the home page
 - Other users can now view and purchase your product.
 
 ---
