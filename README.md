@@ -66,7 +66,7 @@ EduMarket is designed to be simple and intuitive for students to buy and sell ed
 ### 3. Buy Products
 - After logging in, you can browse products on the home page or use the search bar to find specific items.
 - To buy a product, contact the owner using the provided contact details on the product page.
-![Screenshot 2025-03-02 103715](https://github.com/user-attachments/assets/4f59c777-cd9d-448f-8f26-7163e36ac086)
+![WhatsApp Image 2025-03-02 at 13 41 04_45c9478b](https://github.com/user-attachments/assets/cdec1ca4-424e-4c80-bd94-9bd5c10f4cbd)
 
 ### 4. Sell Products
 - To sell a product, click the **Sell Product** button on the navigation bar and you will be directed to a page shown below.
